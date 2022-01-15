@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+        <title>Order Form</title>
+    </head>
+    <body>
+        <h1>Book Fair Order Form</h1>
+        <p>Fill Out This Form For Your Nook Order</p>
+        <p>Please Request One Book at a Time</p>
+        <p>* Fields are Required</p><br>
+        <form action="bookOrder" method="post">
+            <input type="hidden" name="action" value="add">   
+            <label class="inputLabel">Name*</label><br>
+            <input type="text" name="name" required><br>
+            <label class="inputLabel">Email*</label><br>
+            <input type="email" name="email" required><br>
+            <label class="inputLabel">Book Title*</label><br>
+            <input type="text" name="bookTitle" required><br><br>
+            <input type="submit" value="Order Now" class="buttons">
+        </form>
+    </body>
+</html>
